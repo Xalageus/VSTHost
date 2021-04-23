@@ -8,7 +8,7 @@ namespace HostShell
     {
         static void Main(string[] args)
         {
-            VSTHost.Loader host = new VSTHost.Loader();
+            Loader host = new Loader();
             Thread thread = new Thread(() => host.Init());
             thread.SetApartmentState(ApartmentState.STA);
             thread.Start();
