@@ -36,6 +36,7 @@ namespace VSTHost
             }
             if (midiDevicesCB.Items.Count == 0)
             {
+                listenButton.Enabled = false;
                 midiDevicesCB.Enabled = false;
                 midiDevicesCB.Items.Add("No MIDI Input devices found");
                 midiDevicesCB.SelectedIndex = 0;
@@ -44,6 +45,7 @@ namespace VSTHost
             {
                 midiDevicesCB.SelectedIndex = 0;
                 midiDevicesCB.Enabled = true;
+                listenButton.Enabled = true;
             }
         }
 
